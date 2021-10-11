@@ -6,9 +6,13 @@ body {
 }
 /*============================header==============================*/
 .header {
-   width: 1920px;
-   background: #509450;
-   height: 96px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;  /* !!!!   */
+  width: 1920px;
+  background: #509450;
+  height: 96px;
 }
 /*=========================navigation==============================*/
 .navigation {
@@ -20,6 +24,9 @@ body {
   background: #2f5e2f;
 }
 .nav_option_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   width: 1488px;
   background: #5454aa;
 }
@@ -33,9 +40,40 @@ body {
 }
 /*============setting_container======================*/
 .setting_container {
+  display: flex;
+  flex-direction: column;
   width: 379px;
   height: 1536px;
   background: #65a3d4;
+}
+.departmens_bar_btn {
+  width: 304px;
+  background: green;
+}
+.categories_container {
+  width: 304px;
+  height: 572px;
+  margin-top: 54px;
+  background: red;
+
+}
+.coll_filters_container {
+  width: 304px;
+  height: 40px;
+  margin-top: 38px;
+  background: green;  
+}
+.exp_filters_container{
+  width: 304px;
+  height: 304px;
+  margin-top: 24px;
+  background: red;
+}
+.years_filter {
+  width: 304px;
+  height: 424px; 
+  margin-top: 24px;
+  background: green;
 }
 /*=============product_list=================*/
 .product_list {
@@ -46,41 +84,187 @@ body {
   background: #198dea;
 }
 .products_menu {
-   display: flex;
+  display: flex;
   flex-direction: column;
   width: 1114px;
   height: 1612px;
   background: #198dea;
 }
 .products_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   width: 1114px;
   height: 42px;
-  margin-top: 8px;
   background: #a65454; 
+  margin-top: 8px;
 }
-
-.related_products {
+.sort_handlers {
+  display: flex;
+  flex-direction: row;
+}
+.sort_option_of_products {
+  display: flex;/*!!!*/
+  justify-content: center;/*!!!*/
+  align-items: center;/*!!!*/
+  width: 136px;
+  height: 36px;
+  margin: auto 16px;
+  background: white;
+  border: 1px solid #5A5B6A;
+  border-radius: 4px;
+}
+.option_btn_block {
+  width: 413px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-right: 16px; 
+}
+.option_handlers {
+  width: 255px;
+  display: flex;
+  flex-direction: row;
+}
+.option_handlers button {
+  width: 85px;
+  height: 36px;
+}
+.view_handler {
+  width: 136px;
+  display: flex;
+  flex-direction: row;
+}
+.view_handler button {
+  width: 68px;
+  height: 36px;
+}
+.products_filters {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 1114px;
   height: 32px;
   margin-top: 40px;
   background: #922f2f;
 }
+.products_filters p {
+  margin: auto 4px auto 16px;
+}
+.selected_filters{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  margin: auto 8px;
+  background: #EDEDF0;
+  border-radius: 99px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 143%;
+}
+.related_products {
+ 
+}
 .products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; /*!!!!*/
   width: 1114px;
   height: 1442px;
+  box-sizing: border-box;
   margin: 32px 0 16px;
   background: #9e4640;
 }
-.filters {
-
+.product {
+  width: 258px;
+  margin: 0 8px;
+  height: 472px;
+  background: wheat;
+  box-sizing: border-box;
+  padding: 16px;
+}
+.grade_row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; /*!!!*/
+  width: 100%;
+}
+/*====================tools=====================*/
+.tools {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 1114px;
   height: 156px;
   margin: 40px 0 60px;
   background: #a65454;
 }
+
+.tool {
+width: 361px;
+height: 156px;
+background: #EDEDF0;
+border-radius: 8px;
+}
+
 /*=============================footer=============================*/
 .footer {
   width: 1920px;
   height: 292px;
   background: #51a451;
+}
+.contacts {
+  display: flex;
+  flex-direction: row;
+
+  margin-left: 592px;
+  width: 1114px;
+  height: 192px;
+  background: rebeccapurple;
+}
+.customer_contacts {
+  background: red;
+  width: 753px;
+  height: 192px;
+}
+.contacts_row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.bisiness_contacts{
+  background: yellow;
+  width: 361px;
+  height: 192px;
+}
+.cooperation_row {
+  width: 1920px;
+  height: 50px;
+  background: green;
+}
+.cooperation_row_content {
+  display: flex;
+  flex-direction: row;
+  width: 1114px;
+  height: 100%;
+  margin-left: 592px;
+  background: #b7b7de;
+}
+.CRC_part {
+  width: 371px;
+  height: 100%; 
+  border: 1px solid black;
+}
+.other_info {
+  width: 1114px;
+  height: 50px;
+  margin-left: 592px;
+  background: white;
 }
