@@ -7,71 +7,90 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesnormalize" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Quicksand:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
   <title>Document</title>
 </head>
 
 <body>
   <header class="header">
-    <img src="./img/header/logo.png">
-    <button>Sell on Shopka</button>
-    <button>Register</button>
-    <input type="text" placeholder="useless items on white background">
-    <button>Consumer Electronics</button>
-    <button>Sign in</button>
-    <div class="cart_value">
-      <button>My cart</button>
+    <div class="logo">
+      <img src="./img/header/logo.png">
     </div>
-
-    <img src="./img/header/Powlowski.png">
+    <div class="basic_option">
+      <a href="#">Sell on Shopka</a>
+      <a href="#">Register</a>
+    </div>
+    <div class="search_place">
+      <button class="search_btn">
+        <img src="./img/header/input_button/search.png" >
+      </button>
+      <input type="text" placeholder="useless items on white background">
+      <button>
+        <img src="./img/header/input_button/cansel.png" >
+      </button>
+    </div>
+    <a class="electr_link" href="#">Consumer Electronics</a>
+    <div class="profile_btn">
+      <button>Sign in</button>
+      <div class="card_value">
+        <button>My card</button>
+      </div>
+    </div>
+    <img class="photo" src="./img/header/Powlowski.png">
   </header>
   <nav class="navigation">
     <div class="nav_option_container">
       <button class="navigation_elements">
-        <img src="./img/nav/clothing.png" >
+        <img class = "nav_icon" src="./img/nav/clothing.png" >
         <p>Clothing & Shoes</p>
       </button>
       <button class="navigation_elements">
-        <img src="./img/nav/Entertainment.png">
+        <img class = "nav_icon" src="./img/nav/Entertainment.png">
         <p>Entertainment</p>
       </button>
       <button class="navigation_elements">
-        <img src="./img/nav/Music.png">
+        <img class = "nav_icon" src="./img/nav/Music.png">
         <p>Music</p>
       </button>
       <button class="navigation_elements">
-        <img src="./img/nav/Sport.png">
+        <img class = "nav_icon" src="./img/nav/Sport.png">
         <p>Sport & Lifestyle</p>
       </button>
       <button class="navigation_elements">
-        <img src="./img/nav/Pets.png">
+        <img class = "nav_icon" src="./img/nav/Pets.png">
         <p>Pets</p>
       </button>
       <button class="navigation_elements">
-        <img src="./img/nav/Kitchen.png">
+        <img class = "nav_icon" src="./img/nav/Kitchen.png">
         <p>Kitchen Accessories</p>
       </button>
       <button class="navigation_elements">
-        <img src="./img/nav/Travel.png">
+        <img class = "nav_icon" src="./img/nav/Travel.png">
         <p>Travel Equipment</p>
       </button>
       <button class="navigation_elements">
-        <img src="./img/nav/Growing.png">
+        <img class = "nav_icon" src="./img/nav/Growing.png">
         <p>Growing & Garden</p>
       </button>
       <button class="navigation_elements">
-        <img src="./img/nav/Tools.png">
+        <img class = "nav_icon" src="./img/nav/Tools.png">
         <p>Electrical Tools</p>
       </button>
       <button class="navigation_elements">
-        <img src="./img/nav/Mother.png">
+        <img class = "nav_icon" src="./img/nav/Mother.png">
         <p>Mother Care</p>
       </button>
       <button class="navigation_elements">
-        <img src="./img/nav/Toys.png">
+        <img class = "nav_icon" src="./img/nav/Toys.png">
         <p>Toys & Entertainment</p>
       </button>
       <button class="navigation_elements">
-        <img src="./img/nav/Vintage.png">
+        <img class = "nav_icon" src="./img/nav/Vintage.png">
         <p>Vintage</p>
       </button>
     </div>
@@ -90,19 +109,49 @@
       <div class="products_menu">
         <div class="products_nav">
           <div class="sort_handlers">
-            <div class="sort_option_of_products">Useless first</div>
-            <div class="sort_option_of_products">Condition</div>
-            <div class="sort_option_of_products">Delivery options</div>
+            <div class="sort_option_of_products">
+              <p>Useless first</p>
+              <img src="./img/main_content/option/arrow.png">
+            </div>
+            <div class="sort_option_of_products ">
+              <p>Condition</p>
+              <img src="./img/main_content/option/arrow.png">
+            </div>
+            <div class="sort_option_of_products">
+              <p>Delivery options</p>
+              <img src="./img/main_content/option/arrow.png">
+            </div>
           </div>
           <div class="option_btn_block">
-            <div class="option_handlers">
-              <button>Show all</button>
-              <button>Auction</button>
-              <button>Buy now</button>
+            <div class="form_radio_btn">
+              <input id="radio-1" type="radio" name="radio" value="1" checked>
+              <label for="radio-1">Show all</label>
             </div>
-            <div class="view_handler">
-              <button>img</button>
-              <button>img</button>
+            <div class="form_radio_btn">
+              <input id="radio-2" type="radio" name="radio" value="1" checked>
+              <label for="radio-2">Auction</label>
+            </div>
+            <div class="form_radio_btn">
+              <input id="radio-3" type="radio" name="radio" value="1" checked>
+              <label for="radio-3">Buy now</label>
+            </div>
+          </div>
+          <div class="view_handler">
+            <div class="form_radio_veiw_btn">
+              <input id="radio_veiw_1" type="radio" name="radio_veiw" value="1" checked>
+              <label for="radio_veiw_1">
+                <div class="veiw_icon_container">
+                  <img src="./img/main_content/option/veiw_icon_1.png">
+                </div>
+              </label>
+            </div>
+            <div class="form_radio_veiw_btn">
+              <input id="radio_veiw_2" type="radio" name="radio_veiw" value="1" checked>
+              <label for="radio_veiw_2">
+                <div class="veiw_icon_container">
+                <img src="./img/main_content/option/veiw_icon_2.png">
+                </div>
+              </label>
             </div>
           </div>
         </div>
@@ -131,14 +180,19 @@
                 <img src="./img/main_content/products_lists/products/stars/half_star.png">
               </div>
               <p>4.87</p>
-              <button>Watch</button>
+              <button class="watch">
+                <img src="./img/main_content/option/heart.png">
+                <p>Watch</p>
+                </button>
             </div>
           </div>
           <div class="product">
             <img src="./img/main_content/products_lists/products/boots.png">
-            <p>John Von Ebalkin SPRING </p>
-            <h3>$13.95</h3>
-            <p>1258 bids, 359 watchers $5.95 for shipping</p>
+            <div class="discription">
+              <p>John Von Ebalkin SPRING </p>
+              <h3>$13.95</h3>
+              <p>1258 bids, 359 watchers $5.95 for shipping</p>
+            </div>
             <div class="grade_row">
               <div class="grade_stars">
                 <img src="./img/main_content/products_lists/products/stars/full_star.png">
@@ -148,7 +202,10 @@
                 <img src="./img/main_content/products_lists/products/stars/half_star.png">
               </div>
               <p>4.56</p>
-              <button>Watch</button>
+              <button class="watch">
+                <img src="./img/main_content/option/heart.png">
+                <p>Watch</p>
+                </button>
             </div>
           </div>
           <div class="product">
@@ -165,7 +222,10 @@
                 <img src="./img/main_content/products_lists/products/stars/half_star.png">
               </div>
               <p>4.77</p>
-              <button>Watch</button>
+              <button class="watch">
+                <img src="./img/main_content/option/heart.png">
+                <p>Watch</p>
+                </button>
             </div>
           </div>
           <div class="product">
@@ -182,7 +242,10 @@
                 <img src="./img/main_content/products_lists/products/stars/half_star.png">
               </div>
               <p>4.87</p>
-              <button>Watch</button>
+              <button class="watch">
+                <img src="./img/main_content/option/heart.png">
+                <p>Watch</p>
+                </button>
             </div>
           </div>
           <div class="product">
@@ -199,7 +262,10 @@
                 <img src="./img/main_content/products_lists/products/stars/half_star.png">
               </div>
               <p>4.99</p>
-              <button>Watch</button>
+              <button class="watch">
+                <img src="./img/main_content/option/heart.png">
+                <p>Watch</p>
+                </button>
             </div>
           </div>
           <div class="product">
@@ -216,7 +282,10 @@
                 <img src="./img/main_content/products_lists/products/stars/half_star.png">
               </div>
               <p>4.87</p>
-              <button>Watch</button>
+              <button class="watch">
+                <img src="./img/main_content/option/heart.png">
+                <p>Watch</p>
+                </button>
             </div>
           </div>
           <div class="product">
@@ -233,7 +302,10 @@
                 <img src="./img/main_content/products_lists/products/stars/half_star.png">
               </div>
               <p>4.56</p>
-              <button>Watch</button>
+              <button class="watch">
+                <img src="./img/main_content/option/heart.png">
+                <p>Watch</p>
+                </button>
             </div>
           </div>
           <div class="product">
@@ -250,7 +322,10 @@
                 <img src="./img/main_content/products_lists/products/stars/half_star.png">
               </div>
               <p>4.77</p>
-              <button>Watch</button>
+              <button class="watch">
+                <img src="./img/main_content/option/heart.png">
+                <p>Watch</p>
+                </button>
             </div>
           </div>
           <div class="product">
@@ -267,7 +342,10 @@
                 <img src="./img/main_content/products_lists/products/stars/half_star.png">
               </div>
               <p>4.87</p>
-              <button>Watch</button>
+              <button class="watch">
+                <img src="./img/main_content/option/heart.png">
+                <p>Watch</p>
+                </button>
             </div>
           </div>
           <div class="product">
@@ -284,7 +362,10 @@
                 <img src="./img/main_content/products_lists/products/stars/half_star.png">
               </div>
               <p>4.99</p>
-              <button>Watch</button>
+              <button class="watch">
+               <img src="./img/main_content/option/heart.png">
+                <p>Watch</p>
+                </button>
             </div>
           </div>
           <div class="product">
@@ -301,7 +382,10 @@
                 <img src="./img/main_content/products_lists/products/stars/half_star.png">
               </div>
               <p>4.77</p>
-              <button>Watch</button>
+              <button class="watch">
+                <img src="./img/main_content/option/heart.png">
+                <p>Watch</p>
+                </button>
             </div>
           </div>
           <div class="product">
@@ -318,15 +402,30 @@
                 <img src="./img/main_content/products_lists/products/stars/half_star.png">
               </div>
               <p>4.56</p>
-              <button>Watch</button>
+              <button class="watch">
+                <img src="./img/main_content/option/heart.png">
+                <p>Watch</p>
+                </button>
             </div>
           </div>
         </div>
       </div>
       <div class="tools">
-        <div class="tool"></div>
-        <div class="tool"></div>
-        <div class="tool"></div>
+        <div class="tool">
+          <img src="./img/main_content/tools/idea.png">
+          <h3>Clear & Usable user flows</h3>
+          <p>Let’s boost yout marketplace</p>
+        </div>
+        <div class="tool">
+          <img src="./img/main_content/tools/magic.png">
+          <h3>Fine & Styled components</h3>
+          <p>Speed up with Setproduct templates</p>
+        </div>
+        <div class="tool">
+          <img src="./img/main_content/tools/paints.png">
+          <h3>Customizable & Reusable</h3>
+          <p>Take our UX patterns and rebuild</p>
+        </div>
       </div>
     </div>
     </div>
@@ -360,7 +459,7 @@
         </div>
       </div>
       <div class="bisiness_contacts">
-              <h3>BISINESS</h3>
+        <h3>BISINESS</h3>
         <div class="link">
           <a href="#">About</a>
         </div>
