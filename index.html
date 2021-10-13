@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesnormalize" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/main.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700&family=Quicksand:wght@300;400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap"
-    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700&family=Quicksand:wght@300;400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 
 <body>
-  <header class="header">
+  <header class="header flex_row">
     <div class="logo">
       <img src="./img/header/logo.png">
     </div>
@@ -23,17 +21,17 @@
       <a href="#">Sell on Shopka</a>
       <a href="#">Register</a>
     </div>
-    <div class="search_place">
+    <div class="search_place flex_row">
       <button class="search_btn">
         <img src="./img/header/input_button/search.png" >
       </button>
-      <input type="text" placeholder="useless items on white background">
+      <input type="text" value="useless items on white background">
       <button>
         <img src="./img/header/input_button/cansel.png" >
       </button>
     </div>
     <a class="electr_link" href="#">Consumer Electronics</a>
-    <div class="profile_btn">
+    <div class="profile_btn flex_row">
       <button>Sign in</button>
       <div class="card_value">
         <div class="number_card">5</div>
@@ -42,69 +40,69 @@
     </div>
     <img class="photo" src="./img/header/Powlowski.png">
   </header>
-  <nav class="navigation">
-    <div class="nav_option_container">
-      <button class="navigation_elements">
+  <nav class="navigation flex_row">
+    <div class="nav_option_container flex_row">
+      <button class="navigation_elements white_background  flex_column">
         <img class = "nav_icon" src="./img/nav/clothing.png" >
         <p>Clothing & Shoes</p>
       </button>
-      <button class="navigation_elements">
+      <button class="navigation_elements white_background  flex_column">
         <img class = "nav_icon" src="./img/nav/Entertainment.png">
         <p>Entertainment</p>
       </button>
-      <button class="navigation_elements">
+      <button class="navigation_elements white_background  flex_column">
         <img class = "nav_icon" src="./img/nav/Music.png">
         <p>Music</p>
       </button>
-      <button class="navigation_elements">
+      <button class="navigation_elements white_background  flex_column">
         <img class = "nav_icon" src="./img/nav/Sport.png">
         <p>Sport & Lifestyle</p>
       </button>
-      <button class="navigation_elements">
+      <button class="navigation_elements white_background  flex_column">
         <img class = "nav_icon" src="./img/nav/Pets.png">
         <p>Pets</p>
       </button>
-      <button class="navigation_elements">
+      <button class="navigation_elements white_background  flex_column">
         <img class = "nav_icon" src="./img/nav/Kitchen.png">
         <p>Kitchen Accessories</p>
       </button>
-      <button class="navigation_elements">
+      <button class="navigation_elements white_background  flex_column">
         <img class = "nav_icon" src="./img/nav/Travel.png">
         <p>Travel Equipment</p>
       </button>
-      <button class="navigation_elements">
+      <button class="navigation_elements white_background  flex_column">
         <img class = "nav_icon" src="./img/nav/Growing.png">
         <p>Growing & Garden</p>
       </button>
-      <button class="navigation_elements">
+      <button class="navigation_elements white_background  flex_column">
         <img class = "nav_icon" src="./img/nav/Tools.png">
         <p>Electrical Tools</p>
       </button>
-      <button class="navigation_elements">
+      <button class="navigation_elements white_background  flex_column">
         <img class = "nav_icon" src="./img/nav/Mother.png">
         <p>Mother Care</p>
       </button>
-      <button class="navigation_elements">
+      <button class="navigation_elements white_background  flex_column">
         <img class = "nav_icon" src="./img/nav/Toys.png">
         <p>Toys & Entertainment</p>
       </button>
-      <button class="navigation_elements">
+      <button class="navigation_elements white_background  flex_column">
         <img class = "nav_icon" src="./img/nav/Vintage.png">
         <p>Vintage</p>
       </button>
     </div>
   </nav>
-  <section class="main_content">
-    <div class="setting_container">
+  <section class="main_content flex_row">
+    <div class="setting_container  flex_column">
       <ul class="departmens">
-        <button class="departmens_bar_btn">
+        <button class="departmens_bar_btn white_background ">
         <img src="./img/main_content/dep_bar/arrow1.png">
         Departments
       </button>
         <li>
           <div class="categories_container">
             <ul class="all_categories">
-              <div class="cat_btn">
+              <div class="cat_btn flex_row">
                 <img src="./img/main_content/dep_bar/arrow2.png">
                 <div class="dep_title">
                   <h4>All Categories</h4>
@@ -143,7 +141,7 @@
                       <h4>Smart Watches</h4>
                     </li>
                     <li>
-                      <button class="dep_btn">
+                      <button class="dep_btn white_background ">
                       Show more
                       <img src="./img/main_content/dep_bar/arrow3.png">
                     </button>
@@ -184,7 +182,7 @@
 
                   </li>
                   <li>
-                    <button class="dep_btn expand">
+                    <button class="dep_btn white_background  expand">
                     Expand
                   </button>
                   </li>
@@ -194,7 +192,7 @@
           </div>
         </li>
         <li>
-          <div class="coll_filters_container departmens_bar_btn">
+          <div class="coll_filters_container departmens_bar_btn white_background  flex_row">
             <h4>Collapsed filters</h4>
             <img src="./img/main_content/dep_bar/arrow2.png">
           </div>
@@ -312,27 +310,27 @@
       </ul>
     </div>
 
-    <div class="product_list">
-      <div class="products_menu">
-        <div class="products_nav">
-          <div class="sort_handlers">
-            <div class="sort_option_of_products">
+    <div class="product_list flex_column">
+      <div class="products_menu white_background flex_column">
+        <div class="products_nav flex_row">
+          <div class="flex_row">
+            <div class="sort_option_of_products white_background">
               <div class="decorating_option">
-                <div class="decor">SORT BY</div>
+                <div class="decor white_background">SORT BY</div>
                 <p>Useless first</p>
               </div>
               <img src="./img/main_content/option/arrow.png">
             </div>
-            <div class="sort_option_of_products ">
+            <div class="sort_option_of_products white_background">
               <p>Condition</p>
               <img src="./img/main_content/option/arrow.png">
             </div>
-            <div class="sort_option_of_products">
+            <div class="sort_option_of_products white_background">
               <p>Delivery options</p>
               <img src="./img/main_content/option/arrow.png">
             </div>
           </div>
-          <div class="option_btn_block">
+          <div class="option_btn_block flex_row">
             <div class="form_radio_btn">
               <input id="radio-1" type="radio" name="radio" value="1" checked>
               <label for="radio-1">Show all</label>
@@ -346,7 +344,7 @@
               <label for="radio-3">Buy now</label>
             </div>
           </div>
-          <div class="view_handler">
+          <div class="view_handler flex_row">
             <div class="form_radio_veiw_btn">
               <input id="radio_veiw_1" type="radio" name="radio_veiw" value="1" checked>
               <label for="radio_veiw_1">
@@ -365,7 +363,7 @@
             </div>
           </div>
         </div>
-        <div class="products_filters">
+        <div class="products_filters flex_row">
           <p>Related</p>
           <div class="selected_filters">worldwide shipping</div>
           <div class="selected_filters">under $50</div>
@@ -375,16 +373,19 @@
           <div class="selected_filters">vintage typewriter</div>
         </div>
 
-        <div class="products">
-          <div class="product">
-
-            <img src="./img/main_content/products_lists/products/typewriter.png">
+        <div class="products flex_row">
+          <div class= "product white_background flex_column">
+            <div class="img_case">
+              <img src="./img/main_content/products_lists/products/typewriter.png">
+            </div>
             <div class="discription">
               <p>Prototyping items to create a lot if useless things...</p>
             </div>
             <h3>$128.99</h3>
-            <p>Showcasing onHovered state</p>
-            <div class="grade_row">
+            <div class="post_text">
+              <p>Showcasing onHovered state</p>
+            </div>
+            <div class="grade_row flex_row">
               <div class="grade_stars">
                 <img src="./img/main_content/products_lists/products/stars/full_star.png">
                 <img src="./img/main_content/products_lists/products/stars/full_star.png">
@@ -393,22 +394,25 @@
                 <img src="./img/main_content/products_lists/products/stars/half_star.png">
               </div>
               <p>4.87</p>
-              <button class="watch">
+              <button class="watch flex_row">
                 <img src="./img/main_content/option/heart.png">
                 <p>Watch</p>
                 </button>
             </div>
           </div>
-          <div class="product">
-
-            <img src="./img/main_content/products_lists/products/boots.png">
+          <div class= "product white_background flex_column">
+            <div class="img_case">
+              <img src="./img/main_content/products_lists/products/boots.png">
+            </div>
             <div class="discription">
               <p>John Von Ebalkin SPRING </p>
             </div>
             <h3>$13.95</h3>
+           <div class="post_text">
             <p>1258 bids, 359 watchers $5.95 for shipping</p>
+            </div>
 
-            <div class="grade_row">
+            <div class="grade_row flex_row">
               <div class="grade_stars">
                 <img src="./img/main_content/products_lists/products/stars/full_star.png">
                 <img src="./img/main_content/products_lists/products/stars/full_star.png">
@@ -417,18 +421,24 @@
                 <img src="./img/main_content/products_lists/products/stars/half_star.png">
               </div>
               <p>4.56</p>
-              <button class="watch">
+              <button class="watch flex_row">
                 <img src="./img/main_content/option/heart.png">
                 <p>Watch</p>
                 </button>
             </div>
           </div>
-          <div class="product">
-            <img src="./img/main_content/products_lists/products/cat.png">
-            <p>Envelope, Stripes, Pencil and etc. Purchase this kit today and feel OKAY</p>
+          <div class= "product white_background flex_column">
+            <div class="img_case">
+              <img src="./img/main_content/products_lists/products/cat.png">
+            </div>
+            <div class="discription">
+              <p>Envelope, Stripes, Pencil and etc. Purchase this kit today and feel OKAY</p>
+            </div>
             <h3>$9.50</h3>
+            <div class="post_text">
             <p>Eligible for Shipping To Mars or somewhere else</p>
-            <div class="grade_row">
+            </div>
+            <div class="grade_row flex_row">
               <div class="grade_stars">
                 <img src="./img/main_content/products_lists/products/stars/full_star.png">
                 <img src="./img/main_content/products_lists/products/stars/full_star.png">
@@ -437,18 +447,24 @@
                 <img src="./img/main_content/products_lists/products/stars/half_star.png">
               </div>
               <p>4.77</p>
-              <button class="watch">
+              <button class="watch flex_row">
                 <img src="./img/main_content/option/heart.png">
                 <p>Watch</p>
                 </button>
             </div>
           </div>
-          <div class="product">
-            <img src="./img/main_content/products_lists/products/plastic.png">
-            <p>Professional teadrinking set for every designer and developer</p>
+          <div class= "product white_background flex_column">
+            <div class="img_case">
+              <img src="./img/main_content/products_lists/products/plastic.png">
+            </div>
+            <div class="discription">
+              <p>Professional teadrinking set for every designer and developer</p>
+            </div>
             <h3>$128.99</h3>
+            <div class="post_text">
             <p>Eligible for nothing :(</p>
-            <div class="grade_row">
+            </div>
+            <div class="grade_row flex_row">
               <div class="grade_stars">
                 <img src="./img/main_content/products_lists/products/stars/full_star.png">
                 <img src="./img/main_content/products_lists/products/stars/full_star.png">
@@ -457,18 +473,24 @@
                 <img src="./img/main_content/products_lists/products/stars/half_star.png">
               </div>
               <p>4.87</p>
-              <button class="watch">
+              <button class="watch flex_row">
                 <img src="./img/main_content/option/heart.png">
                 <p>Watch</p>
                 </button>
             </div>
           </div>
-          <div class="product">
-            <img src="./img/main_content/products_lists/products/cup.png">
+          <div class= "product white_background flex_column">
+            <div class="img_case">
+              <img src="./img/main_content/products_lists/products/cup.png">
+            </div>
+            <div class="discription">
             <p>Creativity stimulating lotion. Drink every morning to generate better ideas!</p>
+            </div>
             <h3>$12.48</h3>
-            <p>Wordwide shifting available Buyers protection possible!</p>
-            <div class="grade_row">
+            <div class="post_text">
+              <p>Wordwide shifting available Buyers protection possible!</p>
+            </div>
+            <div class="grade_row flex_row">
               <div class="grade_stars">
                 <img src="./img/main_content/products_lists/products/stars/full_star.png">
                 <img src="./img/main_content/products_lists/products/stars/full_star.png">
@@ -477,18 +499,24 @@
                 <img src="./img/main_content/products_lists/products/stars/half_star.png">
               </div>
               <p>4.99</p>
-              <button class="watch">
+              <button class="watch flex_row">
                 <img src="./img/main_content/option/heart.png">
                 <p>Watch</p>
                 </button>
             </div>
           </div>
-          <div class="product">
-            <img src="./img/main_content/products_lists/products/book.png">
-            <p>Prototyping items to create a lot if useless things...</p>
+          <div class= "product white_background flex_column">
+            <div class="img_case">
+              <img src="./img/main_content/products_lists/products/book.png">
+            </div>
+            <div class="discription">
+              <p>Prototyping items to create a lot if useless things...</p>
+            </div>
             <h3>$128.99</h3>
-            <p>Showcasing onHovered state</p>
-            <div class="grade_row">
+            <div class="post_text">
+              <p>Showcasing onHovered state</p>
+            </div>
+            <div class="grade_row flex_row">
               <div class="grade_stars">
                 <img src="./img/main_content/products_lists/products/stars/full_star.png">
                 <img src="./img/main_content/products_lists/products/stars/full_star.png">
@@ -497,18 +525,24 @@
                 <img src="./img/main_content/products_lists/products/stars/half_star.png">
               </div>
               <p>4.87</p>
-              <button class="watch">
+              <button class="watch flex_row">
                 <img src="./img/main_content/option/heart.png">
                 <p>Watch</p>
                 </button>
             </div>
           </div>
-          <div class="product">
-            <img src="./img/main_content/products_lists/products/punts.png">
-            <p>John Von Ebalkin SPRING </p>
+          <div class= "product white_background flex_column">
+            <div class="img_case">
+              <img src="./img/main_content/products_lists/products/punts.png">
+            </div>
+            <div class="discription">
+              <p>John Von Ebalkin SPRING </p>
+            </div>
             <h3>$13.95</h3>
+            <div class="post_text">
             <p>1258 bids, 359 watchers $5.95 for shipping</p>
-            <div class="grade_row">
+            </div>
+            <div class="grade_row flex_row">
               <div class="grade_stars">
                 <img src="./img/main_content/products_lists/products/stars/full_star.png">
                 <img src="./img/main_content/products_lists/products/stars/full_star.png">
@@ -517,18 +551,24 @@
                 <img src="./img/main_content/products_lists/products/stars/half_star.png">
               </div>
               <p>4.56</p>
-              <button class="watch">
+              <button class="watch flex_row">
                 <img src="./img/main_content/option/heart.png">
                 <p>Watch</p>
                 </button>
             </div>
           </div>
-          <div class="product">
-            <img src="./img/main_content/products_lists/products/pancil.png">
-            <p>Envelope, Stripes, Pencil and etc. Purchase this kit today and feel OKAY</p>
+          <div class= "product white_background flex_column">
+            <div class="img_case">
+              <img src="./img/main_content/products_lists/products/pancil.png">
+            </div>
+            <div class="discription">
+              <p>Envelope, Stripes, Pencil and etc. Purchase this kit today and feel OKAY</p>
+            </div>
             <h3>$9.50</h3>
+            <div class="post_text">
             <p>Eligible for Shipping To Mars or somewhere else</p>
-            <div class="grade_row">
+            </div>
+            <div class="grade_row flex_row">
               <div class="grade_stars">
                 <img src="./img/main_content/products_lists/products/stars/full_star.png">
                 <img src="./img/main_content/products_lists/products/stars/full_star.png">
@@ -537,18 +577,24 @@
                 <img src="./img/main_content/products_lists/products/stars/half_star.png">
               </div>
               <p>4.77</p>
-              <button class="watch">
+              <button class="watch flex_row">
                 <img src="./img/main_content/option/heart.png">
                 <p>Watch</p>
                 </button>
             </div>
           </div>
-          <div class="product">
-            <img src="./img/main_content/products_lists/products/tea.png">
-            <p>Professional teadrinking set for every designer and developer</p>
+          <div class= "product white_background flex_column">
+            <div class="img_case">
+              <img src="./img/main_content/products_lists/products/tea.png">
+            </div>
+            <div class="discription">
+              <p>Professional teadrinking set for every designer and developer</p>
+            </div>
             <h3>$128.99</h3>
+            <div class="post_text">
             <p>Eligible for nothing :(</p>
-            <div class="grade_row">
+            </div>
+            <div class="grade_row flex_row">
               <div class="grade_stars">
                 <img src="./img/main_content/products_lists/products/stars/full_star.png">
                 <img src="./img/main_content/products_lists/products/stars/full_star.png">
@@ -557,18 +603,24 @@
                 <img src="./img/main_content/products_lists/products/stars/half_star.png">
               </div>
               <p>4.87</p>
-              <button class="watch">
+              <button class="watch flex_row">
                 <img src="./img/main_content/option/heart.png">
                 <p>Watch</p>
                 </button>
             </div>
           </div>
-          <div class="product">
-            <img src="./img/main_content/products_lists/products/tree.png">
-            <p>One string Bonsai description</p>
+          <div class= "product white_background flex_column">
+            <div class="img_case">
+              <img src="./img/main_content/products_lists/products/tree.png">
+            </div>
+            <div class="discription">
+              <p>One string Bonsai description</p>
+            </div>
             <h3>$11.68</h3>
+            <div class="post_text">
             <p>Wordwide shifting available Buyers protection possible!</p>
-            <div class="grade_row">
+            </div>
+            <div class="grade_row flex_row">
               <div class="grade_stars">
                 <img src="./img/main_content/products_lists/products/stars/full_star.png">
                 <img src="./img/main_content/products_lists/products/stars/full_star.png">
@@ -577,18 +629,24 @@
                 <img src="./img/main_content/products_lists/products/stars/half_star.png">
               </div>
               <p>4.99</p>
-              <button class="watch">
+              <button class="watch flex_row">
                <img src="./img/main_content/option/heart.png">
                 <p>Watch</p>
                 </button>
             </div>
           </div>
-          <div class="product">
-            <img src="./img/main_content/products_lists/products/red.png">
-            <p>Simply best item in town to shine bright with your Nine Inch Nails</p>
+          <div class= "product white_background flex_column">
+            <div class="img_case">
+              <img src="./img/main_content/products_lists/products/red.png">
+            </div>
+            <div class="discription">
+              <p>Simply best item in town to shine bright with your Nine Inch Nails</p>
+            </div>
             <h3>$1.25</h3>
+            <div class="post_text">
             <p>Eligible for Shipping To Mars or somewhere else</p>
-            <div class="grade_row">
+            </div>
+            <div class="grade_row flex_row">
               <div class="grade_stars">
                 <img src="./img/main_content/products_lists/products/stars/full_star.png">
                 <img src="./img/main_content/products_lists/products/stars/full_star.png">
@@ -597,18 +655,24 @@
                 <img src="./img/main_content/products_lists/products/stars/half_star.png">
               </div>
               <p>4.77</p>
-              <button class="watch">
+              <button class="watch flex_row">
                 <img src="./img/main_content/option/heart.png">
                 <p>Watch</p>
                 </button>
             </div>
           </div>
-          <div class="product">
-            <img src="./img/main_content/products_lists/products/some.png">
-            <p>KISTOCHKI & KRASIBO. Top cosmetics brand from Chelyabinsk is here!</p>
+          <div class= "product white_background flex_column">
+            <div class="img_case">
+              <img src="./img/main_content/products_lists/products/some.png">
+            </div>
+            <div class="discription">
+              <p>KISTOCHKI & KRASIBO. Top cosmetics brand from Chelyabinsk is here!</p>
+            </div>
             <h3>$23.25</h3>
+            <div class="post_text">
             <p>1258 bids, 359 watchers $5.95 for shipping</p>
-            <div class="grade_row">
+            </div>
+            <div class="grade_row flex_row">
               <div class="grade_stars">
                 <img src="./img/main_content/products_lists/products/stars/full_star.png">
                 <img src="./img/main_content/products_lists/products/stars/full_star.png">
@@ -617,7 +681,7 @@
                 <img src="./img/main_content/products_lists/products/stars/half_star.png">
               </div>
               <p>4.56</p>
-              <button class="watch">
+              <button class="watch flex_row">
                 <img src="./img/main_content/option/heart.png">
                 <p>Watch</p>
                 </button>
@@ -625,18 +689,18 @@
           </div>
         </div>
       </div>
-      <div class="tools">
-        <div class="tool">
+      <div class="tools flex_row">
+        <div class= "tool product flex_column">
           <img src="./img/main_content/tools/idea.png">
           <h3>Clear & Usable user flows</h3>
           <p>Let’s boost yout marketplace</p>
         </div>
-        <div class="tool">
+        <div class= "tool product flex_column">
           <img src="./img/main_content/tools/magic.png">
           <h3>Fine & Styled components</h3>
           <p>Speed up with Setproduct templates</p>
         </div>
-        <div class="tool">
+        <div class= "tool product flex_column">
           <img src="./img/main_content/tools/paints.png">
           <h3>Customizable & Reusable</h3>
           <p>Take our UX patterns and rebuild</p>
@@ -646,17 +710,17 @@
     </div>
   </section>
   <footer class="footer">
-    <div class="contacts">
+    <div class="contacts flex_row">
       <div class="customer_contacts">
         <h3>CUSTOMER</h3>
-        <div class="link">
+        <div class="link flex_row">
           <a href="#">About</a>
           <a href="#">Delivery</a>
           <a href="#">Guarantee</a>
           <a href="#">FAQ</a>
           <a href="#">Contacts</a>
         </div>
-        <div class="contacts_row">
+        <div class="contacts_row flex_row">
           <div class="phone_block">
             <h4>0 800 500 19 10</h4>
             <p>Free call. 9 AM - 9 PM</p>
@@ -665,7 +729,7 @@
             <h4>support@shopka.com</h4>
             <p>Any questions 24/7</p>
           </div>
-          <div class="contacts_btn">
+          <div class="contacts_btn flex_row">
             <button class="treking_order_btn">
               Track Your Order
             </button>
@@ -680,10 +744,10 @@
       </div>
       <div class="bisiness_contacts">
         <h3>BISINESS</h3>
-        <div class="link">
+        <div class="link flex_row">
           <a href="#">About</a>
         </div>
-        <div class="contacts_row">
+        <div class="contacts_row flex_row">
           <div class="phone_block">
             <h4>0 800 777 70 07</h4>
             <p>Free call. 9 AM - 9 PM</p>
@@ -695,11 +759,13 @@
         </div>
       </div>
     </div>
-    <div class="cooperation_row">
-      <div class="cooperation_row_content">
+    <div class="cooperation_row flex_row">
+      <div class="cooperation_row_content flex_row">
         <div class="CRC_part">
           <div class="example_mail">
-            <img src="./img/footer/mail.png">
+            <div class="mail">
+              <img src="./img/footer/mail.png">
+            </div>
             <a>example@mail.com</a>
           </div>
           <button>Subscribe</button>
@@ -713,15 +779,15 @@
 
       </div>
     </div>
-    <div class="other_info">
-      <div class="support_info">
+    <div class="other_info white_background  flex_row">
+      <div class="support_info flex_row">
         <p>Shopka © 2011 All rights reserved</p>
       </div>
-      <div class="support_info">
+      <div class="support_info flex_row">
         <img src="./img/footer/visa.png">
         <img src="./img/footer/mastercard.png">
       </div>
-      <div class="support_info">
+      <div class="support_info flex_row">
         <p>Sitemap</p>
         <p>Privacy policy</p>
       </div>
