@@ -160,10 +160,8 @@ p {
   padding: 14px 5px 13px 5px;
   margin-right: 103px;
 }
-
 .introduction_btn_container:first-of-type {
   margin-right: 30px;
-  font-weight: 500;
 }
 .introduction_btn {
   font-weight: 400;
@@ -172,6 +170,10 @@ p {
   letter-spacing: 0.005em;
   color: #5A5B6A;
 }
+.accent_link {
+  font-weight: 500;
+}
+
 .introduction_btn:hover {
  opacity: 0.6;
 }
@@ -233,11 +235,11 @@ p {
 }
 .log_btn:hover {
   box-shadow: 0px 2px 4px rgba(27, 78, 163, 0.2), 0px 4px 8px rgba(41, 121, 255, 0.2);
-  background: #e9e9e9;
+  background: #f5f1f1;
 }
 .active {
   box-sizing: border-box;
-  padding: 4px 10px 4px 12px;
+  padding: 8px 10px 7px 12px;
   box-shadow: 0px 2px 4px rgba(27, 78, 163, 0.2), 0px 4px 8px rgba(41, 121, 255, 0.2);
   border: none;
   font-family: Quicksand;
@@ -522,12 +524,12 @@ p {
   margin-right: 20px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 50% 50%;
+  background-size: 80% 80%;
 }
 .check_label:checked+label::before {
   border-color: #0b76ef;
   background-color: #0b76ef;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
 }
 /*=============product_list=================*/
 
@@ -535,13 +537,13 @@ p {
   padding-top: 4px;
   box-shadow: 0px 1px 2px rgba(58, 58, 68, 0.24), 0px 2px 4px rgba(90, 91, 106, 0.24);
   border-radius: 8px;
-  margin-bottom: 42px;
+  margin-bottom: 38px;
 }
 .catalog_nav {
   align-items: center;
   width: 1114px;
   box-sizing: border-box;
-  padding: 13px 10px;
+  padding: 14px 10px 12px 10px;
   margin-bottom: 28px;
 }
 .catalog_sort_option {
@@ -567,6 +569,7 @@ p {
 
 .decorating_conteiner {
   position: relative;
+  box-sizing: border-box;
 }
 .select_conteiner {
   margin-right: 218px; /*!!!!!!!*/
@@ -582,11 +585,17 @@ p {
   cursor: pointer;
 }
 .decor {
+  background: white;
+  font-family: Roboto;
   position: absolute;
-  top: -16px;
+  top: -17px;
+  left:-3.5px;
   font-size: 10px;
   line-height: 16px;
-  padding: 1px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  padding: 1px 0.65px 1px 3px;
+ 
 }
 .option_switch_block {
   border-radius: 4px;
@@ -665,6 +674,7 @@ p {
 .related_filters {
   padding: 0 2.5px;
   margin-right:8px;
+  cursor: default;
 }
 
 .selected_filters {
@@ -673,6 +683,7 @@ p {
   margin-right: 12px;
   border-radius: 99px;
   line-height: 143%;
+  cursor: default;
 }
 
 .catalog_list {
@@ -706,6 +717,7 @@ p {
   padding: 6px 10px;
   font-family: Roboto;
   font-size: 12px;
+  font-weight: normal;
   text-align: center;
 }
 .good_deal_label {
@@ -716,6 +728,7 @@ p {
   padding: 6px 10px;
   font-family: Roboto;
   font-size: 12px;
+  font-weight: normal;
   text-align: center;
 }
 .img_case {
@@ -742,6 +755,7 @@ p {
   box-shadow: 0px 2px 4px rgba(59, 69, 123, 0.2), 0px 4px 8px rgba(92, 107, 192, 0.2);
 }
 .tile_post_text {
+  width: 100%;
   padding-right: 8%;
   height: 12%;
   line-height: 143%;
@@ -751,6 +765,12 @@ p {
   margin-bottom: 10px;
   overflow: auto;
   text-overflow: ellipsis;
+}
+.accent_discription {
+  padding-top: 2px;
+  font-size: 14px;
+  font-weight:500;
+  letter-spacing: 0.002em;
 }
 .watch {
   background: url("../img/main_content/option/heart.png") no-repeat left 10px top 8px;
@@ -771,10 +791,12 @@ p {
   padding-left: 2px; 
 }
 .grade_num {
+  font-family: Roboto;
   margin-right: 31px;
   line-height: 22px;
   letter-spacing: 0.1px;
   color: #5E6366;
+  font-weight: 500;
 }
 
 .grade_stars {
@@ -860,6 +882,7 @@ p {
   padding-top: 3px;
   font-size: 12px;
   color: #5A5B6A;
+  cursor: default;
 }
 
 .cooperation_row {
@@ -892,6 +915,7 @@ p {
   background: inherit;
   border: none;
   letter-spacing: 0.018em;
+  min-height: 25px;
 }
 .mail_input:focus {
   border-radius: 4px;
@@ -930,6 +954,7 @@ p {
   letter-spacing: 0.0275em;
   line-height: 100%;
   letter-spacing: 0.0275em;
+  cursor: default;
 }
 .link {
   padding: 8px 0;
@@ -939,6 +964,7 @@ p {
   margin-right: 40px;
   font-size: 16px;
   letter-spacing: 0.0275em;
+  color: #1F1F1F;
 }
 .current_link:hover {
   opacity: 0.6;
@@ -959,6 +985,7 @@ p {
   letter-spacing: 0.75px;
   padding: 11.5px 20.5px;
   margin-right: 30px;
+  background: #EBF2FF;
 }
  .treking_order_btn:hover {
   box-shadow: 0px 2px 4px rgba(27, 78, 163, 0.2), 0px 4px 8px rgba(41, 121, 255, 0.2); 
@@ -1006,7 +1033,9 @@ p {
   align-items: center;
   padding-bottom: 10px;
 }
-
+.copyright {
+  cursor: default;
+}
 .bank_sistems {
  width: 105px;
  justify-content: center;
@@ -1015,8 +1044,9 @@ p {
 }
 .style_current_link {
   font-size: 12px;
+  color: #5A5B6A;
 }
-.style_current_link:hover {
+.style_current_link-haver:hover {
   opacity: 0.6;
 }
 .opening>li {
